@@ -119,7 +119,6 @@ public class TicketViewer {
 				System.out.println("Type \'prev\' to view previous tickets");
 			System.out.println("Type \'menu\' to return to previous menu");
 			System.out.println("Type \'quit\' to exit");
-			System.out.println("count= " + count);
 			String pageInput = sc.next();
 
 			switch (pageInput) {
@@ -155,7 +154,7 @@ public class TicketViewer {
 		int first = tickets.getJSONObject(0).getInt("id");
 		int last = tickets.getJSONObject(tickets.length() - 1).getInt("id");
 		currentSize = last - first + 1;
-		System.out.println("size= " + currentSize);
+
 		for (int i = 0; i < tickets.length(); i++) {
 			String id = tickets.getJSONObject(i).get("id").toString();
 			String date = tickets.getJSONObject(i).get("created_at").toString();

@@ -1,18 +1,18 @@
 Camel Java Router Project
 =========================
+This project queries the ticket list from given api and displays on the console.
+This project is built using Intellij IDE
+
+=== Software Requirements
+1. Java
+2. Maven
 
 === How to build
-
-To build this project use
-
-    mvn install
+1. To build this project use
+    mvn clean install
 
 === How to run
-
-You can run this example using
-
-    mvn camel:run
-
-=== More information
-
-You can find more information about Apache Camel at the website: http://camel.apache.org/
+1. Update the credentials in Credentials.json
+2. Update the subdomain in Credentials.json
+3. Compile and run this application using below commands
+   mvn exec:java -Dexec.mainClass=com.pooja.tickets.Main
